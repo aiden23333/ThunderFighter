@@ -1,0 +1,717 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+		3803B54C983C1092B81A2AED = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			path = "AppRouter.swift";
+			sourceTree = "<group>";
+		};
+		7FE05704425E840F013E83F8 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			path = "Game/Audio/AudioManager.swift";
+			sourceTree = "<group>";
+		};
+		7BA4B5F99235754BCEDE91C1 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			path = "Game/Collision/CollisionSystem.swift";
+			sourceTree = "<group>";
+		};
+		B23943B4D4085E517CBC2ED0 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			path = "Game/Config/GameConfig.swift";
+			sourceTree = "<group>";
+		};
+		AE4970A03277D03DE7106BF4 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			path = "Game/Config/LevelTimeline.swift";
+			sourceTree = "<group>";
+		};
+		0124D032A8BBDEA153185626 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			path = "Game/Enemies/Boss.swift";
+			sourceTree = "<group>";
+		};
+		50A01A7B807EC06526581009 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			path = "Game/Enemies/BossStateMachine.swift";
+			sourceTree = "<group>";
+		};
+		F6AAC094EC0DC99C4B9D207C = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			path = "Game/Enemies/Enemy.swift";
+			sourceTree = "<group>";
+		};
+		081BBE32C21958977038086B = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			path = "Game/GameCoordinator.swift";
+			sourceTree = "<group>";
+		};
+		78E775F15C8D17ECFD389A04 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			path = "Game/GameScene.swift";
+			sourceTree = "<group>";
+		};
+		40539E69C2B62187278DAAD3 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			path = "Game/Items/DropItem.swift";
+			sourceTree = "<group>";
+		};
+		A05BB3728C8E52180F1092A6 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			path = "Game/Models.swift";
+			sourceTree = "<group>";
+		};
+		538665C20E2864FE59E8D312 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			path = "Game/Player/Player.swift";
+			sourceTree = "<group>";
+		};
+		5FF3C1EBD7D4252FD9343F92 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			path = "Game/Player/PlayerController.swift";
+			sourceTree = "<group>";
+		};
+		3BDB418CDF8E88BB684A9E8E = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			path = "Game/Session/GameSession.swift";
+			sourceTree = "<group>";
+		};
+		F5ACEF69ACEF439CB0307634 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			path = "Game/Spawner/EnemySpawner.swift";
+			sourceTree = "<group>";
+		};
+		9D27647E062074C7309F9D04 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			path = "Game/Util/GameRandom.swift";
+			sourceTree = "<group>";
+		};
+		28FB203005A9065238ED6987 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			path = "Game/Util/SpriteTextures.swift";
+			sourceTree = "<group>";
+		};
+		1009843A7D72A17BE8B2AFC2 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			path = "Game/Weapons/Projectiles.swift";
+			sourceTree = "<group>";
+		};
+		C426F502AB654A5310819DD3 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			path = "Game/Weapons/WeaponSystem.swift";
+			sourceTree = "<group>";
+		};
+		072C0C0A28693BFD23942388 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			path = "ThunderFighterApp.swift";
+			sourceTree = "<group>";
+		};
+		22758CFD4BA0C11E21475340 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			path = "Views/GameView.swift";
+			sourceTree = "<group>";
+		};
+		AAFBC58C7DDE5AFC129D8F52 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			path = "Views/HUDView.swift";
+			sourceTree = "<group>";
+		};
+		685E68D50ED1D433AD5CD712 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			path = "Views/HomeView.swift";
+			sourceTree = "<group>";
+		};
+		CC08F97EAF12D10D49865980 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			path = "Views/ResultView.swift";
+			sourceTree = "<group>";
+		};
+		19F8E81C7C4281AB337A32B7 = {
+			isa = PBXFileReference;
+			lastKnownFileType = image.png;
+			path = "Resources/boss.png";
+			sourceTree = "<group>";
+		};
+		0D29AB36C8ABE56FCBAC9FC5 = {
+			isa = PBXFileReference;
+			lastKnownFileType = image.png;
+			path = "Resources/boss2.png";
+			sourceTree = "<group>";
+		};
+		1CD3EB183B3EC13813B24D47 = {
+			isa = PBXFileReference;
+			lastKnownFileType = image.png;
+			path = "Resources/boss3.png";
+			sourceTree = "<group>";
+		};
+		8DC0312E50A60A7C691A7307 = {
+			isa = PBXFileReference;
+			lastKnownFileType = image.png;
+			path = "Resources/core_laser.png";
+			sourceTree = "<group>";
+		};
+		8DC0288DC6717AE78A672539 = {
+			isa = PBXFileReference;
+			lastKnownFileType = image.png;
+			path = "Resources/core_main.png";
+			sourceTree = "<group>";
+		};
+		2DF67AB3A5F96482A66F98A8 = {
+			isa = PBXFileReference;
+			lastKnownFileType = image.png;
+			path = "Resources/core_missile.png";
+			sourceTree = "<group>";
+		};
+		F34F3325B991ED52F0B601E3 = {
+			isa = PBXFileReference;
+			lastKnownFileType = image.png;
+			path = "Resources/enemy_elite.png";
+			sourceTree = "<group>";
+		};
+		E0F92BFCAC93A85EDF3DAE50 = {
+			isa = PBXFileReference;
+			lastKnownFileType = image.png;
+			path = "Resources/enemy_normal_0.png";
+			sourceTree = "<group>";
+		};
+		CF849A7EFD10F23848138851 = {
+			isa = PBXFileReference;
+			lastKnownFileType = image.png;
+			path = "Resources/enemy_normal_1.png";
+			sourceTree = "<group>";
+		};
+		F355FAC11AF555F9D43F85D7 = {
+			isa = PBXFileReference;
+			lastKnownFileType = image.png;
+			path = "Resources/enemy_normal_2.png";
+			sourceTree = "<group>";
+		};
+		63CF66FA8196ED8F191F3689 = {
+			isa = PBXFileReference;
+			lastKnownFileType = image.png;
+			path = "Resources/item_life.png";
+			sourceTree = "<group>";
+		};
+		D04DA31E8CD3BA6F0EDC522C = {
+			isa = PBXFileReference;
+			lastKnownFileType = image.png;
+			path = "Resources/item_repair.png";
+			sourceTree = "<group>";
+		};
+		2E567F92F7E05FE7AB4D50F7 = {
+			isa = PBXFileReference;
+			lastKnownFileType = image.png;
+			path = "Resources/ship_player.png";
+			sourceTree = "<group>";
+		};
+		5AFE870D45C7F826A356D718 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			path = "Tests/ThunderFighterTests/BossKindTests.swift";
+			sourceTree = "<group>";
+		};
+		014A12D141853BED625F36A0 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			path = "Tests/ThunderFighterTests/GameConfigTests.swift";
+			sourceTree = "<group>";
+		};
+		724BEDC85C298EFA3B6ED9B0 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			path = "Tests/ThunderFighterTests/GameRandomTests.swift";
+			sourceTree = "<group>";
+		};
+		4D214CBD381218833B2158FE = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			path = "Tests/ThunderFighterTests/GameSessionEndlessTests.swift";
+			sourceTree = "<group>";
+		};
+		D00E976FB2198DF2F4398A77 = {
+			isa = PBXFileReference;
+			explicitFileType = wrapper.application;
+			path = ThunderFighter.app;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		07DC56347A20AB8A84E3DEF5 = {
+			isa = PBXFileReference;
+			explicitFileType = wrapper.cfbundle;
+			path = ThunderFighterTests.xctest;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FE41B77846EFC78E3F74AB44 = {
+			isa = PBXBuildFile;
+			fileRef = 3803B54C983C1092B81A2AED;
+		};
+		B4130DA255659338BF31A1CE = {
+			isa = PBXBuildFile;
+			fileRef = 7FE05704425E840F013E83F8;
+		};
+		221BD393AA7BF7B18C3B33A7 = {
+			isa = PBXBuildFile;
+			fileRef = 7BA4B5F99235754BCEDE91C1;
+		};
+		A1280CEE181BB601B145215D = {
+			isa = PBXBuildFile;
+			fileRef = B23943B4D4085E517CBC2ED0;
+		};
+		E188E0FFBDBADC67F0896980 = {
+			isa = PBXBuildFile;
+			fileRef = AE4970A03277D03DE7106BF4;
+		};
+		5EAFDAB82923E03838673293 = {
+			isa = PBXBuildFile;
+			fileRef = 0124D032A8BBDEA153185626;
+		};
+		757F2F929F5F83C12BD91B11 = {
+			isa = PBXBuildFile;
+			fileRef = 50A01A7B807EC06526581009;
+		};
+		3F641E2394D013A2A7351ABF = {
+			isa = PBXBuildFile;
+			fileRef = F6AAC094EC0DC99C4B9D207C;
+		};
+		3153D2891C45750CF5D62A20 = {
+			isa = PBXBuildFile;
+			fileRef = 081BBE32C21958977038086B;
+		};
+		2372EB67EED12C1E2EEB5043 = {
+			isa = PBXBuildFile;
+			fileRef = 78E775F15C8D17ECFD389A04;
+		};
+		F718400AF5DF66110FC16A32 = {
+			isa = PBXBuildFile;
+			fileRef = 40539E69C2B62187278DAAD3;
+		};
+		15D641A853D37738F7624FF4 = {
+			isa = PBXBuildFile;
+			fileRef = A05BB3728C8E52180F1092A6;
+		};
+		FAF4A9C066FF24206B89FD34 = {
+			isa = PBXBuildFile;
+			fileRef = 538665C20E2864FE59E8D312;
+		};
+		D7154B3D29516AC944339537 = {
+			isa = PBXBuildFile;
+			fileRef = 5FF3C1EBD7D4252FD9343F92;
+		};
+		5DCF3456641C457D856AB4B6 = {
+			isa = PBXBuildFile;
+			fileRef = 3BDB418CDF8E88BB684A9E8E;
+		};
+		A1ACF82F1076693FCEDD1F9A = {
+			isa = PBXBuildFile;
+			fileRef = F5ACEF69ACEF439CB0307634;
+		};
+		A117B76599B31CD1454855E2 = {
+			isa = PBXBuildFile;
+			fileRef = 9D27647E062074C7309F9D04;
+		};
+		26D02360B7A578298B0D1794 = {
+			isa = PBXBuildFile;
+			fileRef = 28FB203005A9065238ED6987;
+		};
+		2C82FD94169CDDB0099DD6D5 = {
+			isa = PBXBuildFile;
+			fileRef = 1009843A7D72A17BE8B2AFC2;
+		};
+		2EF33C8A1E42F57C9C2E2139 = {
+			isa = PBXBuildFile;
+			fileRef = C426F502AB654A5310819DD3;
+		};
+		8E6C9C1DF7CF9A41FF396B19 = {
+			isa = PBXBuildFile;
+			fileRef = 072C0C0A28693BFD23942388;
+		};
+		73B796799ABA1CC3736BAC2D = {
+			isa = PBXBuildFile;
+			fileRef = 22758CFD4BA0C11E21475340;
+		};
+		E140276F7BC546C5CE085A83 = {
+			isa = PBXBuildFile;
+			fileRef = AAFBC58C7DDE5AFC129D8F52;
+		};
+		B9FD1FE0EE9A11F4598256A2 = {
+			isa = PBXBuildFile;
+			fileRef = 685E68D50ED1D433AD5CD712;
+		};
+		2F853D631B279FDFE28FB097 = {
+			isa = PBXBuildFile;
+			fileRef = CC08F97EAF12D10D49865980;
+		};
+		3E26FE19158FD2942FE417B1 = {
+			isa = PBXBuildFile;
+			fileRef = 19F8E81C7C4281AB337A32B7;
+		};
+		EA5B1DE136DAA01229CBBD0F = {
+			isa = PBXBuildFile;
+			fileRef = 0D29AB36C8ABE56FCBAC9FC5;
+		};
+		C66085B8C02442475A498898 = {
+			isa = PBXBuildFile;
+			fileRef = 1CD3EB183B3EC13813B24D47;
+		};
+		1A3F6BED6A910083C35AC94E = {
+			isa = PBXBuildFile;
+			fileRef = 8DC0312E50A60A7C691A7307;
+		};
+		299CA0FC8F84A3B29238B833 = {
+			isa = PBXBuildFile;
+			fileRef = 8DC0288DC6717AE78A672539;
+		};
+		D72F96F4BCF3C29C9F703D07 = {
+			isa = PBXBuildFile;
+			fileRef = 2DF67AB3A5F96482A66F98A8;
+		};
+		7D10C8682236BE11641583F0 = {
+			isa = PBXBuildFile;
+			fileRef = F34F3325B991ED52F0B601E3;
+		};
+		6516F1E15AA1939DEC37C315 = {
+			isa = PBXBuildFile;
+			fileRef = E0F92BFCAC93A85EDF3DAE50;
+		};
+		E0FB23748C6BB536969B84A1 = {
+			isa = PBXBuildFile;
+			fileRef = CF849A7EFD10F23848138851;
+		};
+		E5EE295158995B1EB53577BF = {
+			isa = PBXBuildFile;
+			fileRef = F355FAC11AF555F9D43F85D7;
+		};
+		1F6058904B095AF8BF287933 = {
+			isa = PBXBuildFile;
+			fileRef = 63CF66FA8196ED8F191F3689;
+		};
+		543F18588E66A98750178BAB = {
+			isa = PBXBuildFile;
+			fileRef = D04DA31E8CD3BA6F0EDC522C;
+		};
+		03C44B1BC484F11175DB00EF = {
+			isa = PBXBuildFile;
+			fileRef = 2E567F92F7E05FE7AB4D50F7;
+		};
+		4C6C8C3669577F9DF3C11EB7 = {
+			isa = PBXBuildFile;
+			fileRef = 5AFE870D45C7F826A356D718;
+		};
+		53FB20BDC450277F9820B442 = {
+			isa = PBXBuildFile;
+			fileRef = 014A12D141853BED625F36A0;
+		};
+		C9EF95D9DD2E146A98F646DC = {
+			isa = PBXBuildFile;
+			fileRef = 724BEDC85C298EFA3B6ED9B0;
+		};
+		6640AB4E7674119AE3F5A497 = {
+			isa = PBXBuildFile;
+			fileRef = 4D214CBD381218833B2158FE;
+		};
+		C0BFCE4384EB9B807E6D6DF6 = {
+			isa = PBXFileReference;
+			lastKnownFileType = wrapper.framework;
+			name = XCTest.framework;
+			path = Developer/Library/Frameworks/XCTest.framework;
+			sourceTree = SDKROOT;
+		};
+		F402FCE8F64202B195553566 = {
+			isa = PBXBuildFile;
+			fileRef = C0BFCE4384EB9B807E6D6DF6;
+		};
+		F2997FB36FA7514A49852500 = {
+			isa = PBXGroup;
+			children = (3803B54C983C1092B81A2AED, 7FE05704425E840F013E83F8, 7BA4B5F99235754BCEDE91C1, B23943B4D4085E517CBC2ED0, AE4970A03277D03DE7106BF4, 0124D032A8BBDEA153185626, 50A01A7B807EC06526581009, F6AAC094EC0DC99C4B9D207C, 081BBE32C21958977038086B, 78E775F15C8D17ECFD389A04, 40539E69C2B62187278DAAD3, A05BB3728C8E52180F1092A6, 538665C20E2864FE59E8D312, 5FF3C1EBD7D4252FD9343F92, 3BDB418CDF8E88BB684A9E8E, F5ACEF69ACEF439CB0307634, 9D27647E062074C7309F9D04, 28FB203005A9065238ED6987, 1009843A7D72A17BE8B2AFC2, C426F502AB654A5310819DD3, 072C0C0A28693BFD23942388, 22758CFD4BA0C11E21475340, AAFBC58C7DDE5AFC129D8F52, 685E68D50ED1D433AD5CD712, CC08F97EAF12D10D49865980, 5AFE870D45C7F826A356D718, 014A12D141853BED625F36A0, 724BEDC85C298EFA3B6ED9B0, 4D214CBD381218833B2158FE, 19F8E81C7C4281AB337A32B7, 0D29AB36C8ABE56FCBAC9FC5, 1CD3EB183B3EC13813B24D47, 8DC0312E50A60A7C691A7307, 8DC0288DC6717AE78A672539, 2DF67AB3A5F96482A66F98A8, F34F3325B991ED52F0B601E3, E0F92BFCAC93A85EDF3DAE50, CF849A7EFD10F23848138851, F355FAC11AF555F9D43F85D7, 63CF66FA8196ED8F191F3689, D04DA31E8CD3BA6F0EDC522C, 2E567F92F7E05FE7AB4D50F7, 2EAE2EAD654636DC761B2AFE);
+			sourceTree = "<group>";
+		};
+		2EAE2EAD654636DC761B2AFE = {
+			isa = PBXGroup;
+			children = (D00E976FB2198DF2F4398A77, 07DC56347A20AB8A84E3DEF5);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B19390AD48C17E236B56AECA = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (FE41B77846EFC78E3F74AB44, B4130DA255659338BF31A1CE, 221BD393AA7BF7B18C3B33A7, A1280CEE181BB601B145215D, E188E0FFBDBADC67F0896980, 5EAFDAB82923E03838673293, 757F2F929F5F83C12BD91B11, 3F641E2394D013A2A7351ABF, 3153D2891C45750CF5D62A20, 2372EB67EED12C1E2EEB5043, F718400AF5DF66110FC16A32, 15D641A853D37738F7624FF4, FAF4A9C066FF24206B89FD34, D7154B3D29516AC944339537, 5DCF3456641C457D856AB4B6, A1ACF82F1076693FCEDD1F9A, A117B76599B31CD1454855E2, 26D02360B7A578298B0D1794, 2C82FD94169CDDB0099DD6D5, 2EF33C8A1E42F57C9C2E2139, 8E6C9C1DF7CF9A41FF396B19, 73B796799ABA1CC3736BAC2D, E140276F7BC546C5CE085A83, B9FD1FE0EE9A11F4598256A2, 2F853D631B279FDFE28FB097);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D8347C2CE561C1B557E137D = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (3E26FE19158FD2942FE417B1, EA5B1DE136DAA01229CBBD0F, C66085B8C02442475A498898, 1A3F6BED6A910083C35AC94E, 299CA0FC8F84A3B29238B833, D72F96F4BCF3C29C9F703D07, 7D10C8682236BE11641583F0, 6516F1E15AA1939DEC37C315, E0FB23748C6BB536969B84A1, E5EE295158995B1EB53577BF, 1F6058904B095AF8BF287933, 543F18588E66A98750178BAB, 03C44B1BC484F11175DB00EF);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7E71BE04C9FAB4AE071DD26 = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = ();
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89BD497FB77549241FD777AD = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (4C6C8C3669577F9DF3C11EB7, 53FB20BDC450277F9820B442, C9EF95D9DD2E146A98F646DC, 6640AB4E7674119AE3F5A497);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		38DEE0AFB170A0E7001DF032 = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (F402FCE8F64202B195553566);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		934622AA0F1C691CFD3C535F = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 68936EAD05ADCDED4990D3D3;
+			buildPhases = (B19390AD48C17E236B56AECA, 9D8347C2CE561C1B557E137D, B7E71BE04C9FAB4AE071DD26);
+			buildRules = ();
+			dependencies = ();
+			name = ThunderFighter;
+			productName = ThunderFighter;
+			productReference = D00E976FB2198DF2F4398A77;
+			productType = "com.apple.product-type.application";
+		};
+		0DC01482628B3D7898EAA7E9 = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5DD3103D5476A8780C25D54E;
+			proxyType = 1;
+			remoteGlobalIDString = 934622AA0F1C691CFD3C535F;
+			remoteInfo = "ThunderFighter";
+		};
+		0400FA55520B75CDBE983F20 = {
+			isa = PBXTargetDependency;
+			target = 934622AA0F1C691CFD3C535F;
+			targetProxy = 0DC01482628B3D7898EAA7E9;
+		};
+		FFB218C65EEEB3AAFAB03413 = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 23F1003A2C32A6C1D6A2E073;
+			buildPhases = (89BD497FB77549241FD777AD, 38DEE0AFB170A0E7001DF032);
+			buildRules = ();
+			dependencies = (0400FA55520B75CDBE983F20);
+			name = ThunderFighterTests;
+			productName = ThunderFighterTests;
+			productReference = 07DC56347A20AB8A84E3DEF5;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5DD3103D5476A8780C25D54E = {
+			isa = PBXProject;
+			attributes = {
+							LastSwiftUpdateCheck = 2600;
+							LastUpgradeCheck = 2600;
+							TargetAttributes = {
+								934622AA0F1C691CFD3C535F = {
+									CreatedOnToolsVersion = "26.6";
+								};
+								FFB218C65EEEB3AAFAB03413 = {
+									CreatedOnToolsVersion = "26.6";
+									TestTargetID = 934622AA0F1C691CFD3C535F;
+								};
+							};
+						};
+			buildConfigurationList = C83C762DE0FEAAE473BF4EAB;
+			compatibilityVersion = "Xcode 15.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (en, Base);
+			mainGroup = F2997FB36FA7514A49852500;
+			productRefGroup = 2EAE2EAD654636DC761B2AFE;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (934622AA0F1C691CFD3C535F, FFB218C65EEEB3AAFAB03413);
+		};
+		038AE8C56D5ABC73E5AD3218 = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+							CLANG_ANALYZER_NONNULL = YES;
+							CLANG_ENABLE_MODULES = YES;
+							CLANG_ENABLE_OBJC_ARC = YES;
+							COPY_PHASE_STRIP = NO;
+							DEBUG_INFORMATION_FORMAT = dwarf;
+							ENABLE_STRICT_OBJC_MSGSEND = YES;
+							ENABLE_TESTABILITY = YES;
+							GCC_DYNAMIC_NO_PIC = NO;
+							GCC_OPTIMIZATION_LEVEL = 0;
+							GCC_PREPROCESSOR_DEFINITIONS = ("DEBUG=1", "$(inherited)");
+							IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+							MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+							MTL_FAST_MATH = YES;
+							ONLY_ACTIVE_ARCH = YES;
+							SDKROOT = iphoneos;
+							SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+							SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+						};
+			name = "Debug";
+		};
+		8C0A155AEF9EF2D71C7B2899 = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+							CLANG_ANALYZER_NONNULL = YES;
+							CLANG_ENABLE_MODULES = YES;
+							CLANG_ENABLE_OBJC_ARC = YES;
+							COPY_PHASE_STRIP = NO;
+							DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+							ENABLE_NS_ASSERTIONS = NO;
+							ENABLE_STRICT_OBJC_MSGSEND = YES;
+							GCC_OPTIMIZATION_LEVEL = s;
+							IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+							MTL_ENABLE_DEBUG_INFO = NO;
+							MTL_FAST_MATH = YES;
+							SDKROOT = iphoneos;
+							SWIFT_COMPILATION_MODE = wholemodule;
+							SWIFT_OPTIMIZATION_LEVEL = "-O";
+							VALIDATE_PRODUCT = YES;
+						};
+			name = "Release";
+		};
+		C817377AD58D1226AB4B133E = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+							ASSETCATALOG_COMPILER_GENERATE_ASSET_SYMBOLS = YES;
+							CODE_SIGN_STYLE = Automatic;
+							CURRENT_PROJECT_VERSION = 1;
+							ENABLE_BITCODE = NO;
+							GENERATE_INFOPLIST_FILE = YES;
+							INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+							LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+							MARKETING_VERSION = 1.0;
+							PRODUCT_BUNDLE_IDENTIFIER = com.example.thunderfighter;
+							PRODUCT_NAME = "$(TARGET_NAME)";
+							SWIFT_EMIT_LOC_STRINGS = YES;
+							SWIFT_VERSION = 5.0;
+							TARGETED_DEVICE_FAMILY = "1,2";
+							IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+							SDKROOT = iphoneos;
+							DEBUG_INFORMATION_FORMAT = dwarf;
+							ENABLE_TESTABILITY = YES;
+							GCC_DYNAMIC_NO_PIC = NO;
+							GCC_OPTIMIZATION_LEVEL = 0;
+							GCC_PREPROCESSOR_DEFINITIONS = ("DEBUG=1", "$(inherited)");
+							ONLY_ACTIVE_ARCH = YES;
+							SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+							SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+						};
+			name = "Debug";
+		};
+		64F50B6C7C61CADDFB1DF08A = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+							ASSETCATALOG_COMPILER_GENERATE_ASSET_SYMBOLS = YES;
+							CODE_SIGN_STYLE = Automatic;
+							CURRENT_PROJECT_VERSION = 1;
+							ENABLE_BITCODE = NO;
+							GENERATE_INFOPLIST_FILE = YES;
+							INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+							LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+							MARKETING_VERSION = 1.0;
+							PRODUCT_BUNDLE_IDENTIFIER = com.example.thunderfighter;
+							PRODUCT_NAME = "$(TARGET_NAME)";
+							SWIFT_EMIT_LOC_STRINGS = YES;
+							SWIFT_VERSION = 5.0;
+							TARGETED_DEVICE_FAMILY = "1,2";
+							IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+							SDKROOT = iphoneos;
+							DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+							ENABLE_NS_ASSERTIONS = NO;
+							ENABLE_TESTABILITY = YES;
+							GCC_OPTIMIZATION_LEVEL = s;
+							SWIFT_COMPILATION_MODE = wholemodule;
+							SWIFT_OPTIMIZATION_LEVEL = "-O";
+							VALIDATE_PRODUCT = YES;
+						};
+			name = "Release";
+		};
+		2DFD68945C0BAE41AFCE04C7 = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+							CODE_SIGN_STYLE = Automatic;
+							CURRENT_PROJECT_VERSION = 1;
+							GENERATE_INFOPLIST_FILE = YES;
+							PRODUCT_BUNDLE_IDENTIFIER = com.example.thunderfighter.tests;
+							PRODUCT_NAME = "$(TARGET_NAME)";
+							SWIFT_EMIT_LOC_STRINGS = NO;
+							SWIFT_VERSION = 5.0;
+							TARGETED_DEVICE_FAMILY = "1,2";
+							IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+							SDKROOT = iphoneos;
+							TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ThunderFighter.app/ThunderFighter";
+							BUNDLE_LOADER = "$(TEST_HOST)";
+							ENABLE_TESTABILITY = YES;
+							LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks @loader_path/Frameworks";
+							DEBUG_INFORMATION_FORMAT = dwarf;
+							GCC_OPTIMIZATION_LEVEL = 0;
+							ONLY_ACTIVE_ARCH = YES;
+							SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+							SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+						};
+			name = "Debug";
+		};
+		58B16DA766AA31F51EDD0D6D = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+							CODE_SIGN_STYLE = Automatic;
+							CURRENT_PROJECT_VERSION = 1;
+							GENERATE_INFOPLIST_FILE = YES;
+							PRODUCT_BUNDLE_IDENTIFIER = com.example.thunderfighter.tests;
+							PRODUCT_NAME = "$(TARGET_NAME)";
+							SWIFT_EMIT_LOC_STRINGS = NO;
+							SWIFT_VERSION = 5.0;
+							TARGETED_DEVICE_FAMILY = "1,2";
+							IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+							SDKROOT = iphoneos;
+							TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ThunderFighter.app/ThunderFighter";
+							BUNDLE_LOADER = "$(TEST_HOST)";
+							ENABLE_TESTABILITY = YES;
+							LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks @loader_path/Frameworks";
+							DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+							SWIFT_OPTIMIZATION_LEVEL = "-O";
+						};
+			name = "Release";
+		};
+		C83C762DE0FEAAE473BF4EAB = {
+			isa = XCConfigurationList;
+			buildConfigurations = (038AE8C56D5ABC73E5AD3218, 8C0A155AEF9EF2D71C7B2899);
+			defaultConfigurationName = Release;
+		};
+		68936EAD05ADCDED4990D3D3 = {
+			isa = XCConfigurationList;
+			buildConfigurations = (C817377AD58D1226AB4B133E, 64F50B6C7C61CADDFB1DF08A);
+			defaultConfigurationName = Release;
+		};
+		23F1003A2C32A6C1D6A2E073 = {
+			isa = XCConfigurationList;
+			buildConfigurations = (2DFD68945C0BAE41AFCE04C7, 58B16DA766AA31F51EDD0D6D);
+			defaultConfigurationName = Release;
+		};
+	};
+	rootObject = 5DD3103D5476A8780C25D54E;
+}

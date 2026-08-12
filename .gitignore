@@ -1,0 +1,23 @@
+# ===== OS =====
+.DS_Store
+Thumbs.db
+
+# ===== Xcode / build artifacts =====
+build/
+*.xcuserdata/
+xcuserdata/
+DerivedData/
+*.hmap
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+*.xcworkspace/xcuserdata/
+
+# ===== Editor =====
+*.swp
+*~
+.idea/
+
+# ===== Local secrets =====
+*.local
+.env
