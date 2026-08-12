@@ -196,6 +196,7 @@ function newSession(mode, diffKey) {
     nextMidAt: mode === 'endless' ? CFG.midbossInterval : 72,   // 关卡模式 72s 出现一次
     midDone: false,
     spawnAcc: 0, wave: 0,
+    killCount: 0, nextDropAt: 10 + Math.floor(Math.random()*11),  // 击杀门控：每 10~20 架才掉 1 个道具
     phaseWarned: false, enraged: false,
     player: {
       x: CFG.W/2, y: CFG.H - 110, r: 16,
@@ -278,7 +279,15 @@ function spawnEnemy(kind, x, y){
 }
 function spawnWave(){
   S.wave++;
-  const n = S.mode==='endless' ? 3+Math.floor(S.wave/2) : 2;
+  let n;
+  if(S.mode==='endless'){
+    // 循序渐进：开局每波 1~2 架，随 180s 平滑增长到 6 架
+    const ramp = Math.min(1, S.time/180);
+    const base = 1 + Math.floor(ramp*4);
+    n = Math.min(6, base + (Math.random()<0.5?1:0));
+  } else {
+    n = 2;
+  }
   for(let i=0;i<n;i++){
     const elite = S.mode==='endless' ? (S.wave%3===0 && i===0) : (S.time>90 && Math.random()<0.22);
     spawnEnemy(elite?'elite':'normal', R(40,CFG.W-40), -30 - R(0,90));
@@ -294,13 +303,23 @@ function dropItem(x, y, type){
   S.items.push({ type, x, y, vy: 70, t: 0, r: 14 });  // type: core_main/core_missile/core_laser/shield/life
 }
 function dropFrom(e){
-  const d = S.diff;
   if(e.kind==='elite'){ dropItem(e.x,e.y,pick(['core_main','core_missile','core_laser'])); return; }
-  const roll = Math.random();
-  const core = Math.min(0.95, CFG.dropCoreChance * d.dropMul);
-  const shield = Math.min(0.95, (CFG.dropCoreChance+CFG.dropShieldChance) * d.dropMul);
-  if(roll < core) dropItem(e.x,e.y,pick(['core_main','core_missile','core_laser']));
-  else if(roll < shield) dropItem(e.x,e.y,'shield');
+  // 击杀门控：普通敌机不再每杀必掉，而是累计击杀 10~20 架后才随机掉 1 个
+  // 护盾/升级道具，避免道具满天飞、打不过来。
+  S.killCount++;
+  if(S.killCount >= S.nextDropAt){
+    S.killCount = 0;
+    S.nextDropAt = 10 + Math.floor(Math.random()*11); // 重新随机 10..20
+    dropRandomReward(e.x, e.y);
+  }
+}
+function dropRandomReward(x, y){
+  if(Math.random() < 0.5){ dropItem(x, y, 'shield'); return; } // 一半概率是护盾
+  // 另一半是升级道具：武器核心 / +1命 / 技能点
+  const r = Math.random();
+  if(r < 0.7) dropItem(x, y, pick(['core_main','core_missile','core_laser']));
+  else if(r < 0.9) dropItem(x, y, 'life');
+  else dropItem(x, y, 'skill');
 }
 function spawnMidboss(){
   const hp = Math.max(20, Math.round(CFG.midbossHp * S.diff.enemyHp));
@@ -696,11 +715,11 @@ function updateSpawner(dt){
   for(const it of S.items) it.y += it.vy*dt;
   S.items = S.items.filter(it => it.y < CFG.H+30);
   if(S.mode === 'level'){
-    // 0-90s 普通机教学；90-150s 精英混入；150s 清场 Boss 入场；180s 超时狂暴
-    let interval = 1.1 * S.diff.spawnMul;
-    if(S.time < 90) interval = R(0.8, 1.5) * S.diff.spawnMul;
-    else if(S.time < 150) interval = R(0.6, 1.0) * S.diff.spawnMul;
-    else interval = 0;
+    // 0-90s 慢起步教学（1.8~2.6s 一波）；90-150s 渐密（1.0~1.6s）；150s 清场 Boss 入场
+    let interval = 0;
+    if(S.time < 90) interval = R(1.8, 2.6) * S.diff.spawnMul;
+    else if(S.time < 150) interval = R(1.0, 1.6) * S.diff.spawnMul;
+    // else (>=150) interval 保持 0 → 只刷 Boss
     if(S.time >= 150 && !S.boss){
       // 清场，BOSS 入场
       S.enemies = []; S.ebullets = [];
@@ -717,8 +736,9 @@ function updateSpawner(dt){
     S.spawnAcc += dt;
     if(interval > 0 && S.spawnAcc >= interval){ S.spawnAcc = 0; spawnWave(); }
   } else {
-    // 无尽：持续刷波 + 定期精英；按难度节奏首刷 Boss 并轮换
-    const interval = Math.max(0.45, (1.15 - S.wave*0.04) * S.diff.spawnMul);
+    // 无尽：持续刷波 + 定期精英；随 180s 从 2.2s 平滑收紧到 0.7s（慢起步、逐渐加难）
+    const ramp = Math.min(1, S.time/180);
+    const interval = Math.max(0.5, (2.2 - 1.5*ramp) * S.diff.spawnMul);
     S.spawnAcc += dt;
     if(S.spawnAcc >= interval){ S.spawnAcc = 0; spawnWave(); }
     if(!S.boss && S.time >= S.nextBossAt && S.enemies.length < 8){
